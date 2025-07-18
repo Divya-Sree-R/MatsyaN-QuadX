@@ -106,7 +106,12 @@ This causes:
 
 ---
 
-## Youtube link - 
+## 📽️ Project Demo Video
+
+[![Watch the video](https://img.youtube.com/vi/3sLfHyApGxU/0.jpg)](https://youtu.be/3sLfHyApGxU)
+
+👉 [Click here to watch the demo video](https://youtu.be/3sLfHyApGxU)
+
 
 <img width="1344" height="615" alt="image" src="https://github.com/user-attachments/assets/d4b92184-dbad-45b8-937a-8c3aad4ba42f" />
 
@@ -114,6 +119,14 @@ This causes:
 
 <img width="1365" height="639" alt="image" src="https://github.com/user-attachments/assets/4e7f08e4-6b32-477f-8a19-3434a34104d2" />
 
+## 👥 Team Members
+
+| Name               | Role                     | GitHub Profile                           |
+|--------------------|--------------------------|------------------------------------------|
+|   Divya Sree R     | Frontend Developer       | [GitHub](https://github.com/Divya-Sree-R)  |
+|   Ayesha Siddiqa K | Backend Developer        | [GitHub](https://github.com/AyeshaSiddiqaK) |
+|   Ani M            | Data Scientist           | [GitHub](https://github.com/hello28-28) |
+|   Arul Moli R      | UI/UX Designer           | [GitHub](https://github.com/ARULMOLI-20) |
 
 
 
