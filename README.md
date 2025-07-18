@@ -110,7 +110,7 @@ This causes:
 
 
 # 1. Clone the repository
-git clone https://github.com/your-username/trawlsmart-ai.git
+git clone https://github.com/Divya-Sree-R/MatsyaN-QuadX
 cd trawlsmart-ai
 
 # 2. Open the project in VS Code or any IDE
