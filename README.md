@@ -106,6 +106,23 @@ This causes:
 
 ---
 
+## ⚙️ Installation & Setup Instructions
+
+
+# 1. Clone the repository
+git clone https://github.com/your-username/trawlsmart-ai.git
+cd trawlsmart-ai
+
+# 2. Open the project in VS Code or any IDE
+
+# 3. Run the project using Live Server (recommended)
+# OR
+# Open index.html directly in your browser
+
+# ✅ No backend setup needed for basic version.
+# ✅ All data is stored locally (LocalStorage & JSON files).
+# ✅ APIs are fetched directly from frontend (weather, SST).
+
 ## 📽️ Project Demo Video
 
 [![Watch the video](https://img.youtube.com/vi/3sLfHyApGxU/0.jpg)](https://youtu.be/3sLfHyApGxU)
