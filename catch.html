@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Catch Log History</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-4">
+    <h3 class="text-center mb-3">Catch History</h3>
+
+    <ul id="catchLogs" class="list-group mb-3"></ul>
+
+    <form id="catchForm">
+        <!-- ✅ Fish Species Dropdown -->
+        <select class="form-select mb-2" id="species" required>
+            <option value="" disabled selected>Select Fish Species</option>
+            <option value="Tuna">Tuna</option>
+            <option value="Mackerel">Mackerel</option>
+            <option value="Sardine">Sardine</option>
+            <option value="Barracuda">Barracuda</option>
+            <option value="Snapper">Snapper</option>
+            <option value="Seer Fish">Seer Fish</option>
+            <option value="Pomfret">Pomfret</option>
+            <option value="Anchovy">Anchovy</option>
+            <option value="Kingfish">Kingfish</option>
+            <option value="Shark">Shark</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <!-- ✅ Hidden input for 'Other' species -->
+        <input type="text" class="form-control mb-2 d-none" placeholder="Enter Fish Species" id="otherSpecies">
+
+        <input type="number" class="form-control mb-2" placeholder="Weight (kg)" id="weight" required>
+
+        <button type="submit" class="btn btn-success w-100">Add Catch</button>
+    </form>
+
+    <a href="index.html" class="btn btn-secondary mt-3 w-100">Back to Main Map</a>
+</div>
+
+<script src="catch.js"></script>
+
+<!-- ✅ Script to handle Other option toggle -->
+<script>
+    const speciesSelect = document.getElementById('species');
+    const otherSpeciesInput = document.getElementById('otherSpecies');
+
+    speciesSelect.addEventListener('change', function() {
+        if (this.value === 'Other') {
+            otherSpeciesInput.classList.remove('d-none');
+            otherSpeciesInput.required = true;
+        } else {
+            otherSpeciesInput.classList.add('d-none');
+            otherSpeciesInput.required = false;
+            otherSpeciesInput.value = '';
+        }
+    });
+
+    // ✅ Modify the catchForm submission to pick correct species
+    document.getElementById('catchForm').addEventListener('submit', function(e){
+        e.preventDefault();
+
+        const selectedSpecies = speciesSelect.value === 'Other' ? otherSpeciesInput.value : speciesSelect.value;
+        const weight = document.getElementById('weight').value;
+
+        const log = {species: selectedSpecies, weight, time: new Date().toLocaleString()};
+        let logs = JSON.parse(localStorage.getItem('catchLogs') || '[]');
+        logs.push(log);
+        localStorage.setItem('catchLogs', JSON.stringify(logs));
+
+        showLogs();
+
+        speciesSelect.value = '';
+        otherSpeciesInput.value = '';
+        otherSpeciesInput.classList.add('d-none');
+        document.getElementById('weight').value = '';
+    });
+
+    // ✅ Call your existing showLogs() function from catch.js after form logic
+    if (typeof showLogs === 'function') {
+        showLogs();
+    }
+</script>
+
+</body>
+</html>

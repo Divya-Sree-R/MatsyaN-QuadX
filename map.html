@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TrawlSmart: BlueRoute AI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">TrawlSmart AI</a>
+        
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid mt-3">
+    <div class="row">
+        <div class="col-md-8">
+            <div id="map" style="height: 550px;"></div>
+        </div>
+        <div class="col-md-4">
+            <button class="btn btn-outline-primary w-100 mb-2" id="suggestBtn">
+                <i class="bi bi-compass"></i> Suggest Fishing Zones
+            </button>
+            <a href="catch.html" class="btn btn-outline-secondary w-100 mb-3">
+                <i class="bi bi-journal-text"></i> Catch History
+            </a>
+
+            <div id="zoneAccordion" class="accordion"></div>
+
+            <div class="card mt-3 shadow-sm">
+                <div class="card-header bg-primary text-white">
+                    Zone & Weather Details
+                </div>
+                <div class="card-body" id="infoPanel" style="height: 250px; overflow-y: auto;">
+                    <p>Waiting for location...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

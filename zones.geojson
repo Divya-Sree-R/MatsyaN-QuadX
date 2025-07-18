@@ -1,0 +1,29 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "name": "Nagapattinam Zone", "color": "#1f77b4" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[79.6, 10.7], [79.8, 10.7], [79.8, 10.9], [79.6, 10.9], [79.6, 10.7]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Rameswaram Zone", "color": "#ff7f0e" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[79.3, 9.2], [79.5, 9.2], [79.5, 9.4], [79.3, 9.4], [79.3, 9.2]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Thoothukudi Zone", "color": "#2ca02c" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[78.0, 8.6], [78.2, 8.6], [78.2, 8.8], [78.0, 8.8], [78.0, 8.6]]]
+      }
+    }
+  ]
+}

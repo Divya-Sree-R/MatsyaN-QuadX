@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TrawlSmart: BlueRoute AI</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="favicon.ico" alt="Logo" width="40" class="me-2" />
+      <span class="fw-bold">TrawlSmart: BlueRoute AI</span>
+    </a>
+
+    <div class="d-flex align-items-center ms-auto">
+      <!-- Language Switcher -->
+      <div class="dropdown me-2">
+        <button class="btn btn-outline-primary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown">
+        Language
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li><a class="dropdown-item" href="#" onclick="switchLanguage('en')">English</a></li>
+          <li><a class="dropdown-item" href="#" onclick="switchLanguage('ta')">தமிழ்</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Features + AI Zones -->
+<section id="features" class="py-5 bg-light">
+  <div class="container">
+    <div class="row">
+      <!-- Features Left Column -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm hover-effect">
+          <a href="map.html" class="text-decoration-none text-dark">
+            <div class="card-body text-center p-3">
+              <h6 class="fw-bold mb-2" data-translate="feature1_title">📍 Zone-based Map</h6>
+              <p class="small mb-0" data-translate="feature1_desc">Marine zones, routes & hotspots</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="card shadow-sm hover-effect">
+          <a href="catch.html" class="text-decoration-none text-dark">
+            <div class="card-body text-center p-3">
+              <h6 class="fw-bold mb-2" data-translate="feature2_title">📊 Catch History</h6>
+              <p class="small mb-0" data-translate="feature2_desc">Track & review your catches</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="card shadow-sm hover-effect">
+          <a href="weather.html" class="text-decoration-none text-dark">
+            <div class="card-body text-center p-3">
+              <h6 class="fw-bold mb-2" data-translate="feature3_title">🌦️ Weather Insights</h6>
+              <p class="small mb-0" data-translate="feature3_desc">Live weather for your zones</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- AI Suggested Zones Right Column -->
+      <div class="col-md-8 mb-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-header bg-primary text-white fw-bold" data-translate="ai_heading">
+            🎯 AI Recommended Fishing Zones
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <div class="border p-3 rounded shadow-sm h-100">
+                  <h6 class="fw-bold" data-translate="zone1_name">Nagapattinam Offshore East</h6>
+                  <p class="small mb-1">🛥️ ~280 km | 🐟 Mackerel, Sardine</p>
+                  <span class="badge bg-success">Safe</span>
+                  <span class="badge bg-primary">Fish-Rich</span>
+                  <span class="badge bg-info">Better Climate</span>
+                </div>
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <div class="border p-3 rounded shadow-sm h-100">
+                  <h6 class="fw-bold" data-translate="zone2_name">Thoothukudi Offshore North</h6>
+                  <p class="small mb-1">🛥️ ~550 km | 🐟 Tuna, Mackerel</p>
+                  <span class="badge bg-success">Safe</span>
+                  <span class="badge bg-primary">Fish-Rich</span>
+                </div>
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <div class="border p-3 rounded shadow-sm h-100">
+                  <h6 class="fw-bold" data-translate="zone3_name">Kanyakumari Offshore East</h6>
+                  <p class="small mb-1">🛥️ ~660 km | 🐟 Tuna, Barracuda</p>
+                  <span class="badge bg-success">Safe</span>
+                </div>
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <div class="border p-3 rounded shadow-sm h-100">
+                  <h6 class="fw-bold" data-translate="zone4_name">Visakhapatnam Offshore South</h6>
+                  <p class="small mb-1">🛥️ ~800 km | 🐟 Mackerel, Tuna</p>
+                  <span class="badge bg-primary">Fish-Rich</span>
+                  <span class="badge bg-info">Favorable Climate</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-3 bg-white border-top text-center">
+  <small>© 2025 TrawlSmart AI. Made for the Hackathon.</small>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Language Switch Script -->
+<script>
+const translations = {
+  en: {
+    feature1_title: "📍 Zone-based Map",
+    feature1_desc: "Marine zones, routes & hotspots",
+    feature2_title: "📊 Catch History",
+    feature2_desc: "Track & review your catches",
+    feature3_title: "🌦️ Weather Insights",
+    feature3_desc: "Live weather for your zones",
+    ai_heading: "🎯 AI Recommended Fishing Zones",
+    zone1_name: "Nagapattinam Offshore East",
+    zone2_name: "Thoothukudi Offshore North",
+    zone3_name: "Kanyakumari Offshore East",
+    zone4_name: "Visakhapatnam Offshore South"
+  },
+  ta: {
+    feature1_title: "📍 மண்டல அடிப்படையிலான வரைபடம்",
+    feature1_desc: "மீன்பிடி மண்டலங்கள், கடல் வழிகள் மற்றும் முக்கிய இடங்கள்",
+    feature2_title: "📊 பிடிப்பு வரலாறு",
+    feature2_desc: "உங்கள் பிடிப்புகளை கண்காணிக்கவும் மற்றும் மதிப்பாய்வு செய்யவும்",
+    feature3_title: "🌦️ வானிலை தகவல்",
+    feature3_desc: "உங்கள் மண்டலங்களுக்கான நேரடி வானிலை புதுப்பிப்பு",
+    ai_heading: "🎯 AI பரிந்துரைக்கும் சிறந்த மீன்பிடி மண்டலங்கள்",
+    zone1_name: "நாகப்பட்டினம் கடற்கரை கிழக்கு",
+    zone2_name: "தூத்துக்குடி கடற்கரை வடக்கு",
+    zone3_name: "கன்னியாகுமரி கடற்கரை கிழக்கு",
+    zone4_name: "விசாகபட்டினம் கடற்கரை தெற்கு"
+  }
+};
+
+function switchLanguage(lang) {
+  document.querySelectorAll('[data-translate]').forEach(el => {
+    const key = el.getAttribute('data-translate');
+    if (translations[lang] && translations[lang][key]) {
+      el.innerHTML = translations[lang][key];
+    }
+  });
+}
+</script>
+
+</body>
+</html>

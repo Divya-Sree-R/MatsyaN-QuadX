@@ -1,0 +1,45 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    { "type": "Feature", "properties": { "zone_id": "SEA_1A", "name": "Chennai Offshore North" }, "geometry": { "type": "Point", "coordinates": [80.5, 13.4] } },
+    { "type": "Feature", "properties": { "zone_id": "SEA_1B", "name": "Chennai Offshore Central" }, "geometry": { "type": "Point", "coordinates": [80.5, 13.1] } },
+    { "type": "Feature", "properties": { "zone_id": "SEA_1C", "name": "Chennai Offshore South" }, "geometry": { "type": "Point", "coordinates": [80.5, 12.8] } },
+    { "type": "Feature", "properties": { "zone_id": "SEA_1D", "name": "Chennai Offshore Deep East" }, "geometry": { "type": "Point", "coordinates": [81.0, 13.0] } },
+
+    { "type": "Feature", "properties": { "zone_id": "SEA_3A", "name": "Nagapattinam Offshore East" }, "geometry": { "type": "Point", "coordinates": [80.6, 11.6] } },
+    { "type": "Feature", "properties": { "zone_id": "SEA_3B", "name": "Nagapattinam Offshore South" }, "geometry": { "type": "Point", "coordinates": [80.4, 11.4] } },
+    { "type": "Feature", "properties": { "zone_id": "SEA_3C", "name": "Nagapattinam Offshore Deep Sea" }, "geometry": { "type": "Point", "coordinates": [81.2, 11.5] } },
+
+    { "type": "Feature", "properties": { "zone_id": "SEA_5A", "name": "Thoothukudi Offshore North" }, "geometry": { "type": "Point", "coordinates": [80.5, 9.5] } },
+    { "type": "Feature", "properties": { "zone_id": "SEA_5B", "name": "Thoothukudi Offshore South" }, "geometry": { "type": "Point", "coordinates": [80.5, 9.0] } },
+    { "type": "Feature", "properties": { "zone_id": "SEA_5C", "name": "Thoothukudi Offshore Deep East" }, "geometry": { "type": "Point", "coordinates": [81.0, 9.2] } },
+
+    { "type": "Feature", "properties": { "zone_id": "SEA_6A", "name": "Kanyakumari Offshore West" }, "geometry": { "type": "Point", "coordinates": [78.3, 8.1] } },
+    { "type": "Feature", "properties": { "zone_id": "SEA_6B", "name": "Kanyakumari Offshore East" }, "geometry": { "type": "Point", "coordinates": [78.9, 8.1] } },
+    { "type": "Feature", "properties": { "zone_id": "SEA_6C", "name": "Kanyakumari Offshore South Deep" }, "geometry": { "type": "Point", "coordinates": [78.6, 7.8] } },
+
+    { "type": "Feature", "properties": { "zone_id": "SEA_8A", "name": "Kochi Offshore South" }, "geometry": { "type": "Point", "coordinates": [75.8, 9.5] } },
+    { "type": "Feature", "properties": { "zone_id": "SEA_8B", "name": "Kochi Offshore North" }, "geometry": { "type": "Point", "coordinates": [75.8, 10.5] } },
+    { "type": "Feature", "properties": { "zone_id": "SEA_8C", "name": "Kochi Offshore Deep Sea" }, "geometry": { "type": "Point", "coordinates": [76.5, 10.0] } },
+
+    { "type": "Feature", "properties": { "zone_id": "SEA_12A", "name": "Visakhapatnam Offshore North" }, "geometry": { "type": "Point", "coordinates": [83.8, 18.2] } },
+    { "type": "Feature", "properties": { "zone_id": "SEA_12B", "name": "Visakhapatnam Offshore South" }, "geometry": { "type": "Point", "coordinates": [83.8, 17.4] } },
+    { "type": "Feature", "properties": { "zone_id": "SEA_12C", "name": "Visakhapatnam Offshore East Deep" }, "geometry": { "type": "Point", "coordinates": [84.3, 17.8] } },
+
+    { "type": "Feature", "properties": { "zone_id": "SEA_14A", "name": "Machilipatnam Offshore North" }, "geometry": { "type": "Point", "coordinates": [81.8, 16.2] } },
+    { "type": "Feature", "properties": { "zone_id": "SEA_14B", "name": "Machilipatnam Offshore South" }, "geometry": { "type": "Point", "coordinates": [81.8, 15.6] } },
+
+    { "type": "Feature", "properties": { "zone_id": "SEA_16A", "name": "Nellore Offshore East" }, "geometry": { "type": "Point", "coordinates": [80.7, 14.5] } },
+    { "type": "Feature", "properties": { "zone_id": "SEA_16B", "name": "Nellore Offshore South" }, "geometry": { "type": "Point", "coordinates": [80.3, 14.1] } },
+
+    { "type": "Feature", "properties": { "zone_id": "SEA_7A", "name": "Kannur Offshore West" }, "geometry": { "type": "Point", "coordinates": [75.4, 11.9] } },
+    { "type": "Feature", "properties": { "zone_id": "SEA_7B", "name": "Kannur Offshore Deep" }, "geometry": { "type": "Point", "coordinates": [75.6, 12.5] } },
+
+    { "type": "Feature", "properties": { "zone_id": "SEA_10A", "name": "Kollam Offshore East" }, "geometry": { "type": "Point", "coordinates": [76.5, 9.0] } },
+    { "type": "Feature", "properties": { "zone_id": "SEA_10B", "name": "Kollam Offshore West" }, "geometry": { "type": "Point", "coordinates": [76.2, 8.6] } },
+
+    { "type": "Feature", "properties": { "zone_id": "SEA_9A", "name": "Alappuzha Offshore North" }, "geometry": { "type": "Point", "coordinates": [76.0, 9.6] } },
+    { "type": "Feature", "properties": { "zone_id": "SEA_9B", "name": "Alappuzha Offshore South" }, "geometry": { "type": "Point", "coordinates": [76.0, 9.2] } }
+  ]
+}
+

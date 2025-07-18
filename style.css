@@ -1,0 +1,66 @@
+/* Container Padding & Overall Layout */
+.container {
+    max-width: 1200px;
+}
+
+/* Make Feature Cards Bigger */
+#features .card {
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#features .card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+#features .card-body h6 {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+#features .card-body p {
+    font-size: 0.95rem;
+}
+
+/* AI Suggested Zones Card */
+#features .card .card-body .row > div {
+    padding: 5px;
+}
+
+#features .card .border {
+    padding: 15px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Adjust Text Size inside Cards */
+#features h6.fw-bold {
+    font-size: 1.1rem;
+}
+
+#features p.small {
+    font-size: 0.9rem;
+}
+
+/* Adjust Badges */
+.badge {
+    font-size: 0.75rem;
+    margin-right: 3px;
+}
+
+/* Responsive Layout on Mobile */
+@media (max-width: 768px) {
+    #features .col-md-4, 
+    #features .col-md-8 {
+        width: 100%;
+    }
+
+    #features .card .border {
+        min-height: auto;
+    }
+}
